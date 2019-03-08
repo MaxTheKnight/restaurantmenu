@@ -2,6 +2,7 @@
 
 /* Use the 'Lato' font family at 18px throughout the body of the document, and cover the background with the 'map-bg.jpg' image. */
 body {
+  background-image:url("map-bg.jpg");
   width: 900px;
   margin: 10px auto;
 }
@@ -12,26 +13,38 @@ nav {
 }
 
 /* Use the 'Supermercado One' font at 45px (colored #5d4037) for the restaurant name. */
+header {
+  font-family:'Courier New';
+  color:#92591f;
+  font-size: 18px;
 
+}
 /* Set the separator between the columns (the "column-rule") to be 2px dashed rosybrown. */
 main {
   columns: 400px 2;
   column-gap: 100px;
+  column-rule: 2px solid #864400
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 /* Show each of the section headings of the menu (e.g. "Starters") in small caps, colored #6d4c41. */
 h2 {
-  margin: 0;
+  margin: 25px;
+  font-size: 30px;
+  color: #6f5606;
+  border: 2px solid #b18500;
 }
 
 /* Make the name of each menu item appear in bold in a 20px size. */
-
+dt{
+  font-size: 25px;
+  color: #c18300
+}
 dd {
-  margin: 0 0 12px 0;
+  margin: 0 0 30px 0;
   display: flex;
 }
 
@@ -48,4 +61,6 @@ dd {
 /* Draw a 2px dashed rosybrown border around the address/footer */
 address {
   padding: 10px;
+  border: solid 2px #864400;
 }
+
